@@ -127,6 +127,18 @@
                                     <div class="progress-bar" style="background-color: #ffb347; width: 70%"></div>
                                 </div>
                             </div>
+                            <div class="habilidad-item mb-3">
+                                <span class="habilidad-nombre">Firebase</span>
+                                <div class="progress habilidades-progress">
+                                    <div class="progress-bar" style="background-color: #FFCA28; color:#222; width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="habilidad-item mb-3">
+                                <span class="habilidad-nombre">Room</span>
+                                <div class="progress habilidades-progress">
+                                    <div class="progress-bar" style="background-color: #4CAF50; color:#fff; width: 70%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,44 +185,154 @@
 
         <!-- Proyectos -->
         <section id="proyectos" class="py-5">
-            <div class="container">
-                <h2>Proyectos</h2>
-                <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="text-center">
-                                <h5>gpof.es</h5>
-                                <p>Sitio web institucional</p>
+    <div class="container">
+        <h2 class="proyectos-title text-center animate__animated animate__fadeIn" style="animation-delay: 3.6s; animation-duration: 1.2s;">Proyectos</h2>
+        <div class="proyectos-carousel-wrapper d-flex flex-column align-items-center">
+            <div id="proyectosCarousel" class="carousel slide w-100" data-bs-ride="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <!-- Proyecto 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center proyecto-card shadow-lg rounded-4 p-4 flex-md-row flex-column">
+                            <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center mb-3 mb-md-0">
+                                <h4 class="proyecto-nombre mb-2">www.gpof.es</h4>
+                                <p class="proyecto-desc">Desarrollo de una página web corporativa para enseñar las ventajas de la app de GPOF dedicada a la oftalmología, con diseño limpio y estructura profesional. Se trabajó en la organización del contenido, estructura accesible para el usuario, y adaptabilidad a dispositivos móviles. Implementación de secciones informativas, contacto, y presentación de servicios con enfoque claro y visual.</p>
+                                <div class="proyecto-tecnologias d-flex flex-wrap gap-2 mt-3">
+                                    <span class="badge bg-danger">HTML</span>
+                                    <span class="badge bg-primary">CSS</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                    <span class="badge bg-success">PHP</span>
+                                    <!-- Añade más según corresponda -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="text-center">
-                                <h5>apadrinasiglosdeolivar.com</h5>
-                                <p>Web solidaria para apadrinamiento de olivos</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="text-center">
-                                <h5>App React Clínica Oftalmológica</h5>
-                                <p>Aplicación para gestión de clientes</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="text-center">
-                                <h5>Valhalla App</h5>
-                                <p>App personal para gestión de entrenamientos de CrossFit</p>
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                                <div class="proyecto-gallery">
+                                    <div class="proyecto-gallery-thumbs">
+                                        <img src="assets/web-gpof/portada_gpof.jpg" alt="gpof.es 1" class="proyecto-thumb active" data-full="assets/web-gpof/portada_gpof.jpg">
+                                        <img src="assets/web-gpof/portada_gpof_2.jpg" alt="gpof.es 2" class="proyecto-thumb" data-full="assets/web-gpof/portada_gpof_2.jpg">
+                                        <img src="assets/web-gpof/portada_gpof_3.jpg" alt="gpof.es 3" class="proyecto-thumb" data-full="assets/web-gpof/portada_gpof_3.jpg">
+                                        <img src="assets/web-gpof/gpof_agenda.jpg" alt="gpof.es 4" class="proyecto-thumb" data-full="assets/web-gpof/gpof_agenda.jpg">
+                                        <img src="assets/web-gpof/gpof_citas.jpg" alt="gpof.es 5" class="proyecto-thumb" data-full="assets/web-gpof/gpof_citas.jpg">
+                                        <img src="assets/web-gpof/gpof_tareas.jpg" alt="gpof.es 6" class="proyecto-thumb" data-full="assets/web-gpof/gpof_tareas.jpg">
+                                    </div>
+                                    <div class="proyecto-gallery-main">
+                                        <img src="assets/web-gpof/portada_gpof.jpg" alt="gpof.es main" class="proyecto-main-img">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                    <!-- Proyecto 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center proyecto-card shadow-lg rounded-4 p-4 flex-md-row flex-column">
+                            <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center mb-3 mb-md-0">
+                                <h4 class="proyecto-nombre mb-2">www.apadrinasiglosdeolivar.com</h4>
+                                <p class="proyecto-desc">Rediseño de un sitio web para facilitar el apadrinamiento de olivos centenarios en Guadalest. Se diseñó e implementó un portal atractivo que permite conocer la iniciativa, acceder a formularios de contacto, realizar el pago por Stripe y visualizar el impacto del proyecto. Se priorizó la experiencia del usuario y la carga eficiente del sitio.</p>
+                                <div class="proyecto-tecnologias d-flex flex-wrap gap-2 mt-3">
+                                    <span class="badge bg-danger">HTML</span>
+                                    <span class="badge bg-primary">CSS</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                    <span class="badge bg-success">PHP</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                                <div class="proyecto-gallery">
+                                    <div class="proyecto-gallery-thumbs">
+                                        <img src="assets/web-apadrina/portada.png" alt="apadrinasiglosdeolivar portada" class="proyecto-thumb active" data-full="assets/web-apadrina/portada.png">
+                                        <img src="assets/web-apadrina/primeras_secciones.jpg" alt="apadrinasiglosdeolivar padrinos" class="proyecto-thumb" data-full="assets/web-apadrina/primeras_secciones.jpg">
+                                        <img src="assets/web-apadrina/area_padrinos.jpg" alt="apadrinasiglosdeolivar secciones" class="proyecto-thumb" data-full="assets/web-apadrina/area_padrinos.jpg">
+                                        <img src="assets/web-apadrina/finalizar_compra.jpg" alt="apadrinasiglosdeolivar area padrinos" class="proyecto-thumb" data-full="assets/web-apadrina/finalizar_compra.jpg">
+                                        <img src="assets/web-apadrina/stripe.jpg" alt="apadrinasiglosdeolivar area padrinos 2" class="proyecto-thumb" data-full="assets/web-apadrina/stripe.jpg">
+                                    </div>
+                                    <div class="proyecto-gallery-main">
+                                        <img src="assets/web-apadrina/portada.png" alt="apadrinasiglosdeolivar main" class="proyecto-main-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center proyecto-card shadow-lg rounded-4 p-4 flex-md-row flex-column">
+                            <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center mb-3 mb-md-0">
+                                <h4 class="proyecto-nombre mb-2">App React Clínica Oftalmológica</h4>
+                                <p class="proyecto-desc">Desarrollo de una aplicación en React destinada a mejorar la relación entre la clínica y sus pacientes. Incluye funcionalidades para gestión de citas, historial, comunicación directa y visualización de información personalizada. Se optimizó el rendimiento y la interfaz para su uso tanto en Android como en iOS.</p>
+                                <div class="proyecto-tecnologias d-flex flex-wrap gap-2 mt-3">
+                                    <span class="badge" style="background-color:#61DBFB; color:#222;">ReactJS</span>
+                                    <span class="badge bg-primary">CSS</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                                <div class="proyecto-gallery">
+                                    <div class="proyecto-gallery-thumbs">
+                                        <img src="assets/clinica-react/image_app_android1.png" alt="clinica app 1" class="proyecto-thumb active" data-full="assets/clinica-react/image_app_android1.png">
+                                        <img src="assets/clinica-react/image_app_android2.png" alt="clinica app 2" class="proyecto-thumb" data-full="assets/clinica-react/image_app_android2.png">
+                                        <img src="assets/clinica-react/image_app_android3.png" alt="clinica app 3" class="proyecto-thumb" data-full="assets/clinica-react/image_app_android3.png">
+                                        <img src="assets/clinica-react/image_app_android4.png" alt="clinica app 4" class="proyecto-thumb" data-full="assets/clinica-react/image_app_android4.png">
+                                        <img src="assets/clinica-react/image_app_iphone1.png" alt="clinica app 5" class="proyecto-thumb" data-full="assets/clinica-react/image_app_iphone1.png">
+                                        <img src="assets/clinica-react/image_app_iphone2.png" alt="clinica app 6" class="proyecto-thumb" data-full="assets/clinica-react/image_app_iphone2.png">
+                                        <img src="assets/clinica-react/image_app_iphone3.png" alt="clinica app 7" class="proyecto-thumb" data-full="assets/clinica-react/image_app_iphone3.png">
+                                    </div>
+                                    <div class="proyecto-gallery-main">
+                                        <img src="assets/clinica-react/image_app_android1.png" alt="clinica app main" class="proyecto-main-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center proyecto-card shadow-lg rounded-4 p-4 flex-md-row flex-column">
+                            <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center mb-3 mb-md-0">
+                                <h4 class="proyecto-nombre mb-2">Valhalla App (Proyecto Personal)</h4>
+                                <p class="proyecto-desc">Proyecto personal centrado en el diseño y desarrollo de una app para gestionar entrenamientos de CrossFit. Incluye creación de WODs personalizados, cronómetro interactivo, estadísticas de progreso y un chat interno. Desarrollada como solución real para entrenadores, combinando diseño atractivo y funcionalidades prácticas.</p>
+                                <div class="proyecto-tecnologias d-flex flex-wrap gap-2 mt-3">
+                                    <span class="badge" style="background-color:#A97BFF; color:#fff;">Kotlin</span>
+                                    <span class="badge" style="background-color: #FFCA28; color: #fff;">Firebase</span>
+                                    <span class="badge" style="background-color: #4CAF50; color:#fff;">Room</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                                <div class="proyecto-gallery">
+                                    <div class="proyecto-gallery-thumbs">
+                                        <img src="assets/valhallaApp/IMAGEN_app_5.jpg" alt="valhalla app 1" class="proyecto-thumb active" data-full="assets/valhallaApp/IMAGEN_app_5.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_6.jpg" alt="valhalla app 2" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_6.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_7.jpg" alt="valhalla app 3" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_7.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_8.jpg" alt="valhalla app 4" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_8.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_9.jpg" alt="valhalla app 5" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_9.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_10.jpg" alt="valhalla app 6" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_10.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_11.jpg" alt="valhalla app 7" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_11.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_12.jpg" alt="valhalla app 8" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_12.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_13.jpg" alt="valhalla app 9" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_13.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_14.jpg" alt="valhalla app 10" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_14.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_15.jpg" alt="valhalla app 11" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_15.jpg">
+                                        <img src="assets/valhallaApp/IMAGEN_app_16.jpg" alt="valhalla app 12" class="proyecto-thumb" data-full="assets/valhallaApp/IMAGEN_app_16.jpg">
+                                    </div>
+                                    <div class="proyecto-gallery-main">
+                                        <img src="assets/valhallaApp/IMAGEN_app_5.jpg" alt="valhalla app main" class="proyecto-main-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Flechas y puntos del carrusel principal -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#proyectosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="1" aria-label="Proyecto 2"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="2" aria-label="Proyecto 3"></button>
+                    <button type="button" data-bs-target="#proyectosCarousel" data-bs-slide-to="3" aria-label="Proyecto 4"></button>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- Contacto -->
         <section id="contacto" class="py-5 bg-dark text-white text-center">

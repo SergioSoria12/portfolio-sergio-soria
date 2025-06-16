@@ -38,5 +38,21 @@ window.addEventListener('DOMContentLoaded', () => {
             }, 50);
         });
     }
+
+    // Galería de imágenes de proyectos (sin Bootstrap)
+    document.querySelectorAll('.proyecto-gallery').forEach(function(gallery) {
+        const mainImg = gallery.querySelector('.proyecto-main-img');
+        const thumbs = gallery.querySelectorAll('.proyecto-thumb');
+        thumbs.forEach(function(thumb) {
+            thumb.addEventListener('click', function() {
+                // Quitar active de todos
+                thumbs.forEach(t => t.classList.remove('active'));
+                // Poner active al seleccionado
+                thumb.classList.add('active');
+                // Cambiar imagen principal
+                mainImg.src = thumb.dataset.full;
+                mainImg.alt = thumb.alt;
+            });
+        });
+    });
 });
-AOS.init({ once: true, duration: 900, easing: 'ease-out-cubic' });
