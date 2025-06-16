@@ -12,7 +12,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #343a40;
+    background-color: #e7edf3;
     z-index: 9999;
     transition: opacity 1s ease;
     flex-direction: column;
