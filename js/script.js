@@ -28,8 +28,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Clic en la flecha
+    // Clic en la flecha o en el texto PERFIL
     const scrollDownBtn = document.getElementById('scrolldownBtn');
+    const perfilBounceArea = document.querySelector('.perfil-bounce-area');
     if (scrollDownBtn) {
         scrollDownBtn.addEventListener('click', function(e) {
             showOverlay();
@@ -37,6 +38,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 overlay.scrollIntoView({ behavior: 'smooth' });
             }, 50);
         });
+    }
+    if (perfilBounceArea) {
+        perfilBounceArea.addEventListener('click', function(e) {
+            showOverlay();
+            setTimeout(() => {
+                overlay.scrollIntoView({ behavior: 'smooth' });
+            }, 50);
+        });
+        perfilBounceArea.style.cursor = 'pointer';
     }
 
     // Galería de imágenes de proyectos (sin Bootstrap)
